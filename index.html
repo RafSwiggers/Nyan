@@ -11,7 +11,7 @@
 
 <body>
     <div id="button">
-        <button id="cat">Nyan</button onclick="myMove()">
+        <button onclick="nyan()" id="cat">Nyan</button>
     </div>
     <div id="container">
         <img id="animate" src="/images/Nyan.png">
@@ -19,20 +19,8 @@
 </body>
 
 <script>
-function myMove() {
-  var elem = document.getElementById("animate");   
-  var pos = 0;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
+    function nyan() {
+        document.getElementsByName('body').style.background = "url('images/background.png')"
 </script>
 
 </html>
