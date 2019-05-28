@@ -1,5 +1,6 @@
 function nyan() {
     var pos = 0;
+    var pos2 = 0;
     var id = setInterval(frame, 50);
     var id = setInterval(frame2, 50);
     var im = document.createElement("img");
@@ -41,8 +42,9 @@ function nyan() {
             document.body.style.background = "none";
 
         } else {
-            im2.style.top = pos + '%';
-            im2.style.left = pos + '%';
+            pos2++;
+            im2.style.top = pos2 + '%';
+            im2.style.left = pos2 + '2%';
         }
     }
 }
