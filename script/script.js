@@ -1,7 +1,6 @@
 function nyan() {
     var pos = 0;
     var id = setInterval(frame, 50);
-    var id = setInterval(frame2, 50);
     var im = document.createElement("img");
     im.src = "/Nyan/images/Nyan.png";
     document.body.appendChild(im);
