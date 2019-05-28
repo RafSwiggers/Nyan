@@ -12,7 +12,7 @@ function nyan() {
         document.body.style.background = "url('/images/background-gif.gif')";
         elem.style.left = '5px';
 
-        if (pos == 100) {
+        if (pos == 2000) {
             clearInterval(id);
             document.getElementById("button").style.display = "block";
             elem.style.display = "none";
