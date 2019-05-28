@@ -45,8 +45,8 @@ function nyan() {
 
         } else {
             pos++;
-            im.style.top = pos + '%';
-            im.style.left = pos + '%';
+            im2.style.top = pos + '%';
+            im2.style.left = pos + '%';
         }
     }
 }
