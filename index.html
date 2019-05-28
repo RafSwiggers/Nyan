@@ -11,6 +11,7 @@
 
 <body>
     <div id="container">
+        <audio id="song" src="/audio/audio.mp3"></audio>
         <img id="animate" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
         <div id="button">
             <button onclick="nyan()" id="cat">Nyan</button>
@@ -22,18 +23,20 @@
     function nyan() {
         var elem = document.getElementById("animate");
         var pos = 0;
-        var id = setInterval(frame, 5);
+        var id = setInterval(frame, 50);
 
         function frame() {
             document.getElementById("button").style.display = "none";
             document.getElementById("animate").style.display = "block";
-            if (pos == 350) {
+            document.getElementById("song").play();
+            document.body.style.background = url("/images/background-gif");
+            if (pos == 10000) {
                 clearInterval(id);
                 document.getElementById("button").style.display = "block";
             } else {
                 pos++;
                 elem.style.top = pos + 'px';
-                elem.style.left = pos + 'px';
+                elem.style.left = pos + '2px';
             }
         }
     }
