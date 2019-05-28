@@ -4,56 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Nyan/CSS/style.css">
-    <link href="/Nyan/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Nyan</title>
+    <script src="/script/script.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <audio id="song" src="/Nyan/audio/audio.mp3"></audio>
-        <img id="animate" src="/Nyan/images/Nyan.png" alt="Nyan cat" style="display: none">
+        <audio id="song" src="/audio/audio.mp3"></audio>
+        <img id="animate" src="/images/Nyan.png" alt="Nyan cat">
+        <link rel="script" href="/script.js">
 
         <div id="button">
-            <button onclick="nyan()" id="cat">Nyan</button>
+            <button id="cat">Nyan</button>
         </div>
     </div>
 </body>
 
 <script>
-    function nyan() {
-        var elem = document.getElementById("animate");
-        var pos = 0;
-        var id = setInterval(frame, 5);
-
-
-
-        function frame() {
-            document.getElementById("button").style.display = "none";
-            elem.style.display = "block";
-            document.getElementById("song").play();
-            document.body.style.background = "url('/Nyan/images/background-gif.gif')";
-            elem.style.left = '5px';
-
-            if (pos == 2000) {
-                clearInterval(id);
-                document.getElementById("button").style.display = "block";
-                elem.style.display = "none";
-                elem2.style.display = "none";
-                document.getElementById("song").pause();
-                document.body.style.background = "none";
-
-            } else {
-                pos++;
-                elem.style.top = pos + 'px';
-                elem.style.left = pos + 'px';
-
-
-
-
-            }
-        }
-    }
+    document.getElementById("cat").addEventListener('click', nyan);
 </script>
+
 
 </html>
