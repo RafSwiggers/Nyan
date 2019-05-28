@@ -13,8 +13,16 @@
     height: 100%;
 }
 
-#animate {
+#animate,
+#animate2,
+#animate3,
+#animate4,
+#animate5 {
     position: absolute;
     height: 6vw;
     width: 6vw;
+}
+
+#animate2 {
+    left: -5px;
 }

@@ -13,6 +13,11 @@
     <div id="container">
         <audio id="song" src="/audio/audio.mp3"></audio>
         <img id="animate" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
+        <img id="animate2" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
+        <img id="animate3" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
+        <img id="animate4" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
+        <img id="animate5" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
+
         <div id="button">
             <button onclick="nyan()" id="cat">Nyan</button>
         </div>
@@ -22,21 +27,38 @@
 <script>
     function nyan() {
         var elem = document.getElementById("animate");
+        var elem2 = document.getElementById("animate2");
+
         var pos = 0;
-        var id = setInterval(frame, 50);
+        var id = setInterval(frame, 5);
+
+
 
         function frame() {
             document.getElementById("button").style.display = "none";
             document.getElementById("animate").style.display = "block";
+            document.getElementById("animate2").style.display = "block";
             document.getElementById("song").play();
-            document.body.style.background = url("/images/background-gif");
-            if (pos == 10000) {
+            document.body.style.background = "url('/images/background-gif.gif')";
+            elem.style.left = '5px';
+
+            if (pos == 500) {
                 clearInterval(id);
                 document.getElementById("button").style.display = "block";
+                document.getElementById("animate").style.display = "none";
+                document.getElementById("animate").style.display = "none";
+                document.getElementById("song").pause();
+                document.body.style.background = "none";
+
             } else {
                 pos++;
                 elem.style.top = pos + 'px';
-                elem.style.left = pos + '2px';
+                elem.style.left = pos + 'px';
+                elem2.style.top = pos + 'px';
+                elem2.style.left = pos + 'px';
+
+
+
             }
         }
     }
