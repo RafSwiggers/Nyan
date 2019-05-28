@@ -32,9 +32,6 @@ function nyan() {
     }
 
     function frame2() {
-        document.getElementById("button").style.display = "none";
-        document.getElementById("song").play();
-        document.body.style.background = "url('/Nyan/images/background-gif.gif')";
 
 
         if (pos == 100) {
@@ -44,7 +41,6 @@ function nyan() {
             document.body.style.background = "none";
 
         } else {
-            pos++;
             im2.style.top = pos + '%';
             im2.style.left = pos + '%';
         }
