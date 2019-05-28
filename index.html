@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/Nyan/CSS/style.css">
+    <link href="/Nyan/images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Nyan</title>
 </head>
 
 <body>
     <div class="container">
-        <audio id="song" src="/audio/audio.mp3"></audio>
-        <img id="animate" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
-        <div class="container">
-            <img id="animate2" src="/images/Nyan.png" alt="Nyan cat" style="display: none">
-        </div>
+        <audio id="song" src="/Nyan/audio/audio.mp3"></audio>
+        <img id="animate" src="/Nyan/images/Nyan.png" alt="Nyan cat" style="display: none">
 
         <div id="button">
             <button onclick="nyan()" id="cat">Nyan</button>
@@ -35,7 +32,7 @@
             document.getElementById("button").style.display = "none";
             elem.style.display = "block";
             document.getElementById("song").play();
-            document.body.style.background = "url('/images/background-gif.gif')";
+            document.body.style.background = "url('/Nyan/images/background-gif.gif')";
             elem.style.left = '5px';
 
             if (pos == 2000) {
