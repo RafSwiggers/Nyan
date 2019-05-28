@@ -9,7 +9,7 @@ function nyan() {
         document.getElementById("button").style.display = "none";
         elem.style.display = "block";
         document.getElementById("song").play();
-        document.body.style.background = "url('Nyan/images/background-gif.gif')";
+        document.body.style.background = "url('/Nyan/images/background-gif.gif')";
         elem.style.left = '5px';
 
         if (pos == 2000) {
