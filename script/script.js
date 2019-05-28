@@ -5,7 +5,6 @@ function nyan() {
     im.src = "/Nyan/images/Nyan.png";
     document.body.appendChild(im);
     im.id = "kitty";
-    var elem = document.getElementById("kitty")
 
 
     function frame() {
@@ -22,8 +21,8 @@ function nyan() {
 
         } else {
             pos++;
-            elem.style.top = pos + '%';
-            elem.style.left = pos + '%';
+            im.style.top = pos + '%';
+            im.style.left = pos + '%';
         }
     }
 }
