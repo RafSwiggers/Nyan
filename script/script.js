@@ -11,8 +11,8 @@ function nyan() {
             var im = document.createElement("img");
             im.src = "/Nyan/images/Nyan.png";
             document.body.appendChild(im);
-            im.id = "kitty";
-            let elem = document.getElementById("kitty")
+            im.id = "kitty" + i;
+            var elem = document.getElementById("kitty" + i)
             if (pos == 100) {
                 clearInterval(id);
             } else {
