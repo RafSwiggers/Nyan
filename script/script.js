@@ -1,4 +1,7 @@
 function nyan() {
+    document.getElementById("button").style.display = "none";
+    document.getElementById("song").play();
+    document.body.style.background = "url('/Nyan/images/background-gif.gif')";
     let pos = 0;
     let id = setInterval(frame, 50);
     let im = document.createElement("img");
@@ -6,9 +9,6 @@ function nyan() {
     document.body.appendChild(im);
     im.id = "kitty";
     let elem = document.getElementById("kitty")
-    document.getElementById("button").style.display = "none";
-    document.getElementById("song").play();
-    document.body.style.background = "url('/Nyan/images/background-gif.gif')";
 
     function frame() {
 
