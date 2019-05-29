@@ -13,7 +13,7 @@
     height: 100%;
 }
 
-#kitty {
+.kitty {
     height: 6vw;
     width: 6vw;
     position: absolute;

@@ -12,6 +12,7 @@ function nyan() {
             im.src = "/Nyan/images/Nyan.png";
             document.body.appendChild(im);
             im.id = "kitty" + i;
+            im.class = "kitty";
             var elem = document.getElementById("kitty" + i)
             if (pos == 100) {
                 clearInterval(id);
