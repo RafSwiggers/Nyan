@@ -7,7 +7,7 @@ function nyan() {
         document.getElementById("button").style.display = "none";
         document.getElementById("song").play();
         document.body.style.background = "url('/Nyan/images/background-gif.gif')";
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < 5; i++) {
             var im = document.createElement("img");
             im.src = "/Nyan/images/Nyan.png";
             document.body.appendChild(im);
