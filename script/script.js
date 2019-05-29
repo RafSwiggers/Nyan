@@ -1,8 +1,7 @@
 function nyan() {
-
-    let pos = 0;
-    let id = setInterval(frame, 50);
-    let im = document.createElement("img");
+    var pos = 0;
+    var id = setInterval(frame, 50);
+    var im = document.createElement("img");
     im.src = "/Nyan/images/Nyan.png";
     document.body.appendChild(im);
     im.id = "kitty";
