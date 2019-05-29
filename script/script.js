@@ -1,17 +1,18 @@
 function nyan() {
     var pos = 0;
     var id = setInterval(frame, 50);
-    var im = document.createElement("img");
-    im.src = "/Nyan/images/Nyan.png";
-    document.body.appendChild(im);
-    im.id = "kitty";
-    let elem = document.getElementById("kitty")
+
 
     function frame() {
         document.getElementById("button").style.display = "none";
         document.getElementById("song").play();
         document.body.style.background = "url('/Nyan/images/background-gif.gif')";
         for (i = 0; i < 10; i++) {
+            var im = document.createElement("img");
+            im.src = "/Nyan/images/Nyan.png";
+            document.body.appendChild(im);
+            im.id = "kitty";
+            let elem = document.getElementById("kitty")
             if (pos == 100) {
                 clearInterval(id);
             } else {
