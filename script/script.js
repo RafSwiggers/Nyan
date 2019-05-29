@@ -11,17 +11,14 @@ function nyan() {
     let elem = document.getElementById("kitty")
 
     function frame() {
-
-
-
-        if (pos == 100) {
-            clearInterval(id);
-
-
-        } else {
-            pos++;
-            elem.style.top = pos + '%';
-            elem.style.left = pos + '%';
+        for (i = 0, i < 10, i++) {
+            if (pos == 100) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + '%';
+                elem.style.left = pos + '%';
+            }
         }
     }
     document.getElementById("button").style.display = "block";
