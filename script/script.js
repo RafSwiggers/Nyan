@@ -6,24 +6,25 @@ function nyan() {
     document.body.appendChild(im);
     im.id = "kitty";
     var elem = document.getElementById("kitty")
+    document.getElementById("button").style.display = "none";
+    document.getElementById("song").play();
+    document.body.style.background = "url('/Nyan/images/background-gif.gif')";
+    for (i = 0, i < 10, i++, ) {
+        function frame() {
 
 
-    function frame() {
-        document.getElementById("button").style.display = "none";
-        document.getElementById("song").play();
-        document.body.style.background = "url('/Nyan/images/background-gif.gif')";
+            if (pos == 100) {
+                clearInterval(id);
 
 
-        if (pos == 100) {
-            clearInterval(id);
-            document.getElementById("button").style.display = "block";
-            document.getElementById("song").pause();
-            document.body.style.background = "none";
-
-        } else {
-            pos++;
-            elem.style.top = pos + '%';
-            elem.style.left = pos + '%';
+            } else {
+                pos++;
+                elem.style.top = pos + '%';
+                elem.style.left = pos + '%';
+            }
         }
     }
+    document.getElementById("button").style.display = "block";
+    document.getElementById("song").pause();
+    document.body.style.background = "none";
 }
