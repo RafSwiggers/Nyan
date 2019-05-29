@@ -1,15 +1,15 @@
 function nyan() {
     var pos = 0;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, 90);
 
 
     function frame() {
         document.getElementById("button").style.display = "none";
         document.getElementById("song").play();
-        document.body.style.background = "url('/Nyan/images/background-gif.gif')";
+        document.body.style.background = "url('/images/background-gif.gif')";
         for (i = 0; i < 5; i++) {
             var im = document.createElement("img");
-            im.src = "/Nyan/images/Nyan.png";
+            im.src = "/images/Nyan.png";
             document.body.appendChild(im);
             im.id = "kitty" + i;
             im.class = "kitty";
