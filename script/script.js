@@ -15,7 +15,7 @@ function nyan() {
             elem.style.display = "block";
             document.getElementById("button").style.display = "none";
             document.getElementById("song").play();
-            document.body.style.background = "url('/images/background-gif.gif')";
+            document.body.style.background = "url('/nyan/images/background-gif.gif')";
             elem.style.top = pos + '%';
             elem.style.left = pos + '%'
         }
