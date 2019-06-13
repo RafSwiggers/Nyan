@@ -14,6 +14,7 @@
     <div id="container">
         <div id="animate">
             <img id="kitty" class="smolkitty" src="/nyan/images/Nyan.png" alt="image onf Nyan cat" style="display: none;">
+            <!-- The display setting here makes sure the cat  isn't there until we need it-->
         </div>
         <audio id="song" src="/nyan/audio/audio.mp3"></audio>
         <div id="button">
@@ -23,6 +24,7 @@
 </body>
 
 <script>
+    // Tells the code to run when we click on the button with ID "cat"
     document.getElementById("cat").addEventListener('click', nyan);
 </script>
 
